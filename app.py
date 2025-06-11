@@ -5,9 +5,9 @@ import difflib
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.neighbors import NearestNeighbors
 
-data = pickle.load(open('../bigmovies.pkl', 'rb'))
-feature_set = pickle.load(open('../features.pkl', 'rb'))
-nn_model = pickle.load(open('../model.pkl', 'rb'))
+data = pickle.load(open('bigmovies.pkl', 'rb'))
+feature_set = pickle.load(open('features.pkl', 'rb'))
+nn_model = pickle.load(open('model.pkl', 'rb'))
 
 movies1 = data.head(40)
 
