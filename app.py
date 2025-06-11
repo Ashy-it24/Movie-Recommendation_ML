@@ -91,8 +91,12 @@ def search():
     return render_template('search.html',query=query,results=results)
 
 
+import os
+
+port = int(os.environ.get("PORT", 5000))
+
 
 
 
 if __name__ == '__main__':
-    app.run(port=8000)
+    app.run(host="0.0.0.0", port=port)
